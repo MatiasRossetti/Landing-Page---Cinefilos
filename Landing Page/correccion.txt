@@ -1,0 +1,39 @@
+27/4/23
+
+Cuando se va a ejecutar el JS, se tiene que poner el parametro document ready, para asi no se ejecuta antes. 
+
+PQwery
+addclass
+removeclass 
+
+Position(Fixed)
+
+Position me va a decir como ubicarlo en el flujo del documento, static, relative, absolute y fixed.
+
+Display le dice al elemento como mostrarse, puede ser Block (Por defecto), Flex, Grid, y mas.
+Con none lo oculto.
+Cuando el elemento formulario tiene la clase "Oculto" mostralo en none.
+
+Cuando clickeas un boton, se le quita la clase oculto al objeto. 
+
+Input required text
+
+function
+
+var= $("")
+cons= .val();
+
+Para tomar el input adentro, tengo que saber cual es el input que me interesa (ver cual id tiene), despues ver que dice. 
+Luego quiero saber a cual input se dirige. 
+
+Para responsive Mobile Only (Linea 653)
+y Desktop Only
+
+Terminar todo en una resolucion antes de ver otra. 
+
+font size en el html para poder definir el resto de texto con rem. En vez de estar cambiando todos los valores al mismo tiempo se cambia uno.
+
+z-index de todas las cosas que estan fixed o absolute las ordena y vos podes elegir entre arriba y abajo. 
+
+Definir estandares y luego variarlos a ojo. Cuantas erarquias distintas tengo y estandarlizarlas.
+No tendria que haber muchas variantes tipograficas.

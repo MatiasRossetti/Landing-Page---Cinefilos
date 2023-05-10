@@ -1,0 +1,428 @@
+  @import url('https://fonts.googleapis.com/css2?family=Contrail+One&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Biryani:wght@200;300;400;500;600&display=swap');
+
+
+  html,
+  body {
+    margin: 0;
+    font-size: 10px;
+    font-family: "Roboto", sans-serif;
+    /* overflow-x: hidden; */
+  }
+
+  div {
+    margin: none;
+  }
+
+  * {
+    box-sizing: border-box !important;
+    /* Importante: esto hace que el tamaño de todas las cajas contemple el padding */
+  }
+
+  h1 {
+    font-size: 3rem;
+    font-weight: 200;
+    font-family: 'Contrail One', cursive;
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
+
+  h2 {
+    font-family: 'Biryani', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-block-start: 0;
+    margin-block-end: 0;
+
+  }
+
+  h3 {
+    font-family: 'Biryani', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-block-start: 0;
+    margin-block-end: 0;
+
+  }
+
+  h4 {
+    font-family: 'Biryani', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    letter-spacing: 0.1rem;
+    line-height: 2rem;
+  }
+
+  h5 {
+    font-family: 'Biryani', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 200;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    letter-spacing: 0.1rem;
+    line-height: 2rem;
+  }
+
+
+  /* TITULO */
+
+  .grilla {
+    box-sizing: border-box;
+    margin: auto;
+    overflow: hidden;
+    max-height: 100vh;
+    background-color: rgb(33, 33, 33);
+    background-image: url(../imgs/fondotitulo.png);
+    ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "seventh second"
+      "main second"
+      "third second"
+      "fourth second"
+      "fifth second"
+      "sixth second";
+  }
+
+  .grilla .elemento-1 {
+    grid-area: main;
+    min-width: auto;
+    min-height: auto;
+
+  }
+
+  .grilla .elemento-1 img {
+    height: max-content;
+    width: max-content;
+    padding-top: 3.5vh;
+    padding-bottom: 2vh;
+  }
+
+  .grilla .elemento-1 video {
+    width: 100%;
+  }
+
+  .grilla .elemento-2 {
+    grid-area: second;
+    direction: rtl;
+    padding-right: 10vh;
+    padding-top: 5vh;
+
+  }
+
+  .grilla .elemento-3 {
+    grid-area: third;
+    margin-top: 2vh;
+    padding-top: 3vh;
+    padding-bottom: 2vh;
+  }
+
+  .grilla .elemento-4 {
+    grid-area: fourth;
+    margin-top: -3vh;
+    padding-top: 3.5vh;
+    padding-bottom: 2.5vh;
+  }
+
+  .grilla .elemento-5 {
+    grid-area: fifth;
+    padding-bottom: 5vh;
+    padding-top: 1vh;
+  }
+
+  .grilla .elemento-6 {
+    /* padding-top: 1vh; */
+    grid-area: sixth;
+  }
+
+  .grilla .elemento-7 {
+    grid-area: seventh;
+    padding-left: 12.5vh;
+    padding-top: 4.5vh;
+    padding-bottom: 3vh;
+
+
+  }
+
+
+
+  /* FORMULARIO */
+
+  /* AVISO */
+
+  .aviso {
+
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 30vh;
+    background-color: rgba(174, 101, 10, 1);
+  }
+
+
+
+  /* PREGUNTAS */
+
+  .fondoformulario {
+    background-color: white;
+    background-image: url(../imgs/Formulario.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .pregunta {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 1.25rem; 
+  }
+    
+  .pregunta h2 {
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .pregunta h3{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .pregunta-contenido {
+    display: flex;
+    align-items: center;
+  }
+  
+  .pregunta-contenido input[type="text"],
+  .pregunta-contenido .opciones {
+    margin-left: auto;
+  }
+
+
+  .pregunta .opciones {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .pregunta .row {
+    display: flex;
+  }
+
+  /* BOTONES DE LA SEGUNDA PREGUNTA */
+  
+  .pregunta .toggle-button {
+    width: 12rem;
+    height: 4rem;
+    column-gap: 1rem;
+    border-radius: 0.4rem;
+    border: none;
+    border: rgba(0, 0, 0, 0.4);
+    background-color: rgba(217, 217, 217, 1);
+    transition: background-color 0.3s ease; /* Efecto de transicion */
+  }
+  
+  .pregunta .toggle-button.active {
+    background-color: greenyellow; /* Cambiar al color deseado */
+  }
+  
+  .pregunta .row .toggle-button:not(:last-child) {
+    margin-right: 2rem;
+    margin-bottom: 1rem; 
+  }
+
+  /* EDAD */
+
+  .age-question {
+    display: flex;
+    align-items: center;
+  }
+  
+
+  /* PARRAFOS */
+
+  .Parrafo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 22.5vh;
+    padding-right: 22.5vh;
+    padding-top: 15vh;
+    padding-bottom: 2.5vh;
+  }
+
+  .textoparrafoiz{
+    
+    align-self: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100vh;
+    padding: 7.5rem;
+    padding-right: 5rem;
+    padding-left: 0rem;
+    
+  }
+
+  .imagenparrafoiz{
+    align-self: center;
+    justify-content: center;
+    padding: 7.5rem;
+     padding-right: 5rem;
+
+  }
+
+  /* PARRAFO 2 */
+  
+
+  .Parrafo2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 22.5vh;
+    padding-right: 22.5vh;
+    padding-top: 2.5vh;
+    padding-bottom: 2.5vh;
+  }
+
+  .margenP3{
+    padding-top: 2.5vh;
+  }
+
+  .textoparrafoder{
+  background-color: 
+  rgb(240,188,94);
+    align-self: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100vh;
+    padding: 7.5rem;
+    margin-right: -7.5rem;
+    border-radius: 2rem;
+
+  }
+
+  .imagenparrafoder{
+    align-self: center;
+    justify-content: center;
+    padding: 7.5rem;
+     padding-right: 5rem;
+
+  }
+
+
+
+
+
+  /* BOTONES */
+
+  .cuestionarioboton {
+    font-family: 'Biryani';
+    font-weight: 400;
+    padding: 2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    border-radius: 2rem;
+    border: none;
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: black;
+    background-color: rgba(225, 152, 61, 1);
+    margin-top: -30vh;
+  }
+
+  .tituloboton {
+    font-family: 'Biryani';
+    font-weight: 400;
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-bottom: 10rem;
+    border-radius: 2rem;
+    border: none;
+    font-size: 1.5rem;
+    color: black;
+    background-color: rgba(245, 182, 20, 1);
+    margin-top: -30vh;
+  }
+
+  /* INPUTS */
+
+  .Input {
+    border-radius: 1.2rem;
+    padding-left: 2rem;
+    padding-right: 10rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-family: 'Biryani', sans-serif;
+    font-size: 1.3rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background-color: rgba(217, 217, 217, 1);
+  }
+
+  .InputEdad {
+    border-radius: 1.2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-family: 'Biryani', sans-serif;
+    font-size: 1.3rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background-color: rgba(217, 217, 217, 1);
+  }
+
+
+  /* COLORES */
+
+  .blanco {
+    color: rgba(233, 233, 233, 1);
+  }
+
+  .naranja {
+    color: rgba(245, 182, 20, 1);
+  }
+
+  /* MARGENES */
+
+  .margenizq {
+    margin-left: 22.5vh;
+
+  }
+
+  /* ALINEACIONES */
+
+  .der {
+    justify-content: end;
+  }
+
+
+  /* .texto{ */
+  /* margin: 5vh 5vh 0vh 25vh; */
+  /* } */
+  /* CONDICIONES PARA APARECER Y DESAPARECER */
+
+  @media screen and (max-width: 500px) {
+    .desktop-only {
+      display: none;
+      
+    }
+  }
+
+  @media screen and (min-width: 501px) {
+    .mobile-only {
+      display: none;
+      
+      
+    }
+  }
